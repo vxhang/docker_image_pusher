@@ -138,7 +138,7 @@ jobs:
             
             # 将@sha256:等字符删除
             image_name_tag="${image_name_tag%%@*}"
-            new_image="registry.cn-hangzhou.aliyuncs.com/lhn/a_$image_name_tag"
+            new_image="registry.cn-hangzhou.aliyuncs.com/lhn/charging_pile:$image_name_tag"
             echo "var $ALIYUN_REGISTRY $ALIYUN_NAME_SPACE"
             echo "docker tag $image $new_image"
             docker tag $image $new_image
